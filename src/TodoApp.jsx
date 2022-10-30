@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const titulo = "Hola";
 
 export const TodoApp = (props) => {
@@ -9,4 +11,8 @@ export const TodoApp = (props) => {
       <p>esto es un parrafo</p>
     </>
   );
+};
+
+TodoApp.propTypes = {
+  title: PropTypes.string.isRequired,
 };
